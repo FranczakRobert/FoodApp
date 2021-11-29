@@ -1,0 +1,60 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/robertfranczak/Code/C#/App/C#.csproj": {}
+  },
+  "projects": {
+    "/Users/robertfranczak/Code/C#/App/C#.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/robertfranczak/Code/C#/App/C#.csproj",
+        "projectName": "C#",
+        "projectPath": "/Users/robertfranczak/Code/C#/App/C#.csproj",
+        "packagesPath": "/Users/robertfranczak/.nuget/packages/",
+        "outputPath": "/Users/robertfranczak/Code/C#/App/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/robertfranczak/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.402/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

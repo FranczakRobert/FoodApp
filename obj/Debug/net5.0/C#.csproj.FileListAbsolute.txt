@@ -1,0 +1,15 @@
+/Users/robertfranczak/Code/C#/App/bin/Debug/net5.0/C#.deps.json
+/Users/robertfranczak/Code/C#/App/bin/Debug/net5.0/C#.runtimeconfig.json
+/Users/robertfranczak/Code/C#/App/bin/Debug/net5.0/C#.runtimeconfig.dev.json
+/Users/robertfranczak/Code/C#/App/bin/Debug/net5.0/C#.dll
+/Users/robertfranczak/Code/C#/App/bin/Debug/net5.0/ref/C#.dll
+/Users/robertfranczak/Code/C#/App/bin/Debug/net5.0/C#.pdb
+/Users/robertfranczak/Code/C#/App/obj/Debug/net5.0/C#.csproj.AssemblyReference.cache
+/Users/robertfranczak/Code/C#/App/obj/Debug/net5.0/C#.GeneratedMSBuildEditorConfig.editorconfig
+/Users/robertfranczak/Code/C#/App/obj/Debug/net5.0/C#.AssemblyInfoInputs.cache
+/Users/robertfranczak/Code/C#/App/obj/Debug/net5.0/C#.AssemblyInfo.cs
+/Users/robertfranczak/Code/C#/App/obj/Debug/net5.0/C#.csproj.CoreCompileInputs.cache
+/Users/robertfranczak/Code/C#/App/obj/Debug/net5.0/C#.dll
+/Users/robertfranczak/Code/C#/App/obj/Debug/net5.0/ref/C#.dll
+/Users/robertfranczak/Code/C#/App/obj/Debug/net5.0/C#.pdb
+/Users/robertfranczak/Code/C#/App/obj/Debug/net5.0/C#.genruntimeconfig.cache
