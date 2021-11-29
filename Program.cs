@@ -12,8 +12,7 @@ namespace App
             back.TakeIngridients();
             back.Compare();
             System.Console.WriteLine("Czy chcesz zobaczyc które z podanych przez Ciebie składników pasują do poszczególnych potraw?");
-            string odp0 = Console.ReadLine();
-            back.Show(odp0);
+            back.Show();
             System.Console.WriteLine("Napisz pierwszy człon (słowo) potrawy, aby wyświetlić jej przygotowanie:");
             string odp = Console.ReadLine();
             products.ShowRecipes(odp);

@@ -28,14 +28,14 @@ namespace App
             }
         }
 
-        public void Show(string odp0)
+        public void Show()
         {  
             bool stop = false;
             while(stop == false)
             {
                 stop = true;
                 System.Console.WriteLine("Odpowiedz: tak/nie: ");
-                odp0 = Console.ReadLine();
+                string odp0 = Console.ReadLine();
                 if(odp0 == "tak")
                 {
                     if(q > 0)
@@ -88,7 +88,7 @@ namespace App
                 }
                 else
                 {
-                    stop = false;
+                    stop = true;
                 }
             }
         }
