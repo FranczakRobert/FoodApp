@@ -75,6 +75,8 @@ namespace App
             avocado.Add("rukola");
             avocado.Add("orzechy");
             avocado.Add("cytryna");
+            avocado.Add("avocado");
+            avocado.Add("awokado");
 
             //GRATIN Z BATATÓW
             batat.Add("batat");
@@ -218,7 +220,7 @@ namespace App
                         System.Console.WriteLine("8) Wymieszać i gotować przez ok. 10 minut. Podawać z ugotowanym ryżem i świeżą kolendrą.");
                         break;
                     }
-                    if(input == "salatka")
+                    if(input == "avocado")
                     {
                         System.Console.WriteLine("SAŁATKA Z AWOKADO I PIECZONYCH BATATÓW");
                         System.Console.WriteLine("SKŁADNIKI");
@@ -239,12 +241,12 @@ namespace App
                         System.Console.WriteLine("1 łyżka octu ryżowego lub winnego\n\n");
                         System.Console.WriteLine("PRZYGOTOWANIE: ");
                         System.Console.WriteLine("1) Bataty obrać, pokroić w kosteczkę. Skropić oliwą, doprawić solą,");
-                        System.Console.WriteLine("2) pieprzem, chili i listkami rozmarynu jeśli ich używamy.");
-                        System.Console.WriteLine("3) Wymieszać i ułożyć na blaszce do pieczenia lub w naczyniu żaroodpornym, wstawić do piekarnika");
+                        System.Console.WriteLine(" pieprzem, chili i listkami rozmarynu jeśli ich używamy.");
+                        System.Console.WriteLine("2) Wymieszać i ułożyć na blaszce do pieczenia lub w naczyniu żaroodpornym, wstawić do piekarnika");
                         System.Console.WriteLine(" nagrzanego do 200 stopni C i piec przez około 30 minut lub do miękkości. Na 10 minut przed końcem dodać do pieczenia orzechy.");
-                        System.Console.WriteLine("4) Wyłuskać owoce z granatu. Awokado obrać, usunąć pestkę i pokroić w kosteczkę.");
-                        System.Console.WriteLine("5) Na półmiskach wyłożyć rukolę, doprawić solą i pieprzem, dodać bataty z orzechami, awokado i granata.");
-                        System.Console.WriteLine("6) Wymieszać składniki sosu i polać po sałatce.");
+                        System.Console.WriteLine("3) Wyłuskać owoce z granatu. Awokado obrać, usunąć pestkę i pokroić w kosteczkę.");
+                        System.Console.WriteLine("4) Na półmiskach wyłożyć rukolę, doprawić solą i pieprzem, dodać bataty z orzechami, awokado i granata.");
+                        System.Console.WriteLine("5) Wymieszać składniki sosu i polać po sałatce.");
                         break;
                     }
                     if(input == "batat")

@@ -177,6 +177,7 @@ namespace App
                     if(item == products.avocado[i])
                     {
                         products.pasujace_avocado.Add(item);
+                        a++;
                     }
                 }
                 //Batat
@@ -185,6 +186,7 @@ namespace App
                     if(item == products.batat[i])
                     {
                         products.pasujace_batat.Add(item);
+                        b++;
                     }
                 }
 
@@ -257,11 +259,11 @@ namespace App
             {
                 System.Console.WriteLine("Przepis na: SAŁATKA Z AWOKADO I PIECZONYCH BATATÓW");
                 if(a == 1)
-                System.Console.WriteLine($"Znaleziono {a} pasujący składnik na {avocado}\n \n \n \n");
+                System.Console.WriteLine($"Znaleziono {a} pasujący składnik na {avocado -2}\n \n \n \n");
                 else if(r > 1 && r < 5)
-                System.Console.WriteLine($"Znaleziono {a} pasujące składniki na {avocado}\n \n \n \n");
+                System.Console.WriteLine($"Znaleziono {a} pasujące składniki na {avocado -2}\n \n \n \n");
                 else
-                System.Console.WriteLine($"Znaleziono {a} pasujących składników na {avocado}\n \n \n \n");
+                System.Console.WriteLine($"Znaleziono {a} pasujących składników na {avocado -2}\n \n \n \n");
             }
             //Batat
             int batat = products.batat.Count;
@@ -269,11 +271,11 @@ namespace App
             {
                 System.Console.WriteLine("Przepis na: GRATIN Z BATATÓW");
                 if(b == 1)
-                System.Console.WriteLine($"Znaleziono {b} pasujący składnik na {batat}\n \n \n \n");
-                else if(r > 1 && r < 5)
-                System.Console.WriteLine($"Znaleziono {b} pasujące składniki na {batat}\n \n \n \n");
+                System.Console.WriteLine($"Znaleziono {b} pasujący składnik na {batat -4}\n \n \n \n");
+                else if(r > 1 && r < 5) 
+                System.Console.WriteLine($"Znaleziono {b} pasujące składniki na {batat -4}\n \n \n \n");
                 else
-                System.Console.WriteLine($"Znaleziono {b} pasujących składników na {batat}\n \n \n \n");
+                System.Console.WriteLine($"Znaleziono {b} pasujących składników na {batat -4}\n \n \n \n");
             }
         }
     }
