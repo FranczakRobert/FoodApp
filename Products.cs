@@ -12,12 +12,17 @@ namespace App
             makaron_z_kurkami = new List<string>();
             bolognese = new List<string>();
             ciecierzyca = new List<string>();
+            avocado = new List<string>();
+            batat = new List<string>();
+
 
             pasujace_skladniki_kurki = new List<string>();
             pasujace_skladniki_kurczak = new List<string>();
             pasujace_skladniki_spaghetti = new List<string>();
             pasujace_bolognese = new List<string>();
             pasujace_ciecierzyca = new List<string>();
+            pasujace_avocado = new List<string>();
+            pasujace_batat = new List<string>();
 
             //spaghetti carbonara
             spaghettiCarbonara.Add("makaron");
@@ -62,6 +67,24 @@ namespace App
             ciecierzyca.Add("passa pomidorowa");
             ciecierzyca.Add("ciecierzyca");
             ciecierzyca.Add("mleko kokosowe");
+
+            //SAŁATKA Z AWOKADO I PIECZONYCH BATATÓW
+            avocado.Add("batat");
+            avocado.Add("bataty");
+            avocado.Add("granat");
+            avocado.Add("rukola");
+            avocado.Add("orzechy");
+            avocado.Add("cytryna");
+
+            //GRATIN Z BATATÓW
+            batat.Add("batat");
+            batat.Add("bataty");
+            batat.Add("smietanka");
+            batat.Add("śmietanka");
+            batat.Add("śmietana");
+            batat.Add("śmietanka");
+            batat.Add("papryka");
+            batat.Add("papryka ostra");
 
         }
 
@@ -195,6 +218,49 @@ namespace App
                         System.Console.WriteLine("8) Wymieszać i gotować przez ok. 10 minut. Podawać z ugotowanym ryżem i świeżą kolendrą.");
                         break;
                     }
+                    if(input == "salatka")
+                    {
+                        System.Console.WriteLine("SAŁATKA Z AWOKADO I PIECZONYCH BATATÓW");
+                        System.Console.WriteLine("SKŁADNIKI");
+                        System.Console.WriteLine("1 batat, ok. 300 g");
+                        System.Console.WriteLine("sól");
+                        System.Console.WriteLine("pieprz");
+                        System.Console.WriteLine("1 łyżka oliwy");
+                        System.Console.WriteLine("szczypta płatków chili i opcjonalnie gałązka rozmarynu");
+                        System.Console.WriteLine("50 g orzechów włoskich lub pekan");
+                        System.Console.WriteLine("1/2 owocu granatu");
+                        System.Console.WriteLine("1 awokado");
+                        System.Console.WriteLine("100 g rukoli\n\n");
+                        System.Console.WriteLine("SKŁADNIKI DO SOSU:");
+                        System.Console.WriteLine("1 łyżka musztardy miodowej lub dijon");
+                        System.Console.WriteLine("2 łyżeczki miodu lub syropu klonowego");
+                        System.Console.WriteLine("1 łyżka oliwy extra vergine");
+                        System.Console.WriteLine("1 łyżka soku z cytryny");
+                        System.Console.WriteLine("1 łyżka octu ryżowego lub winnego\n\n");
+                        System.Console.WriteLine("PRZYGOTOWANIE: ");
+                        System.Console.WriteLine("1) Bataty obrać, pokroić w kosteczkę. Skropić oliwą, doprawić solą,");
+                        System.Console.WriteLine("2) pieprzem, chili i listkami rozmarynu jeśli ich używamy.");
+                        System.Console.WriteLine("3) Wymieszać i ułożyć na blaszce do pieczenia lub w naczyniu żaroodpornym, wstawić do piekarnika");
+                        System.Console.WriteLine(" nagrzanego do 200 stopni C i piec przez około 30 minut lub do miękkości. Na 10 minut przed końcem dodać do pieczenia orzechy.");
+                        System.Console.WriteLine("4) Wyłuskać owoce z granatu. Awokado obrać, usunąć pestkę i pokroić w kosteczkę.");
+                        System.Console.WriteLine("5) Na półmiskach wyłożyć rukolę, doprawić solą i pieprzem, dodać bataty z orzechami, awokado i granata.");
+                        System.Console.WriteLine("6) Wymieszać składniki sosu i polać po sałatce.");
+                        break;
+                    }
+                    if(input == "batat")
+                    {   
+                        System.Console.WriteLine("GRATIN Z BATATÓW");
+                        System.Console.WriteLine("SKŁANIKI");
+                        System.Console.WriteLine("2 duże bataty");
+                        System.Console.WriteLine("2 ząbki czosnku (lub 1 łyżeczka sproszkowanego)");
+                        System.Console.WriteLine("1 gałązka rozmarynu (lub 1 łyżka suszonego) można zastąpić tymiankiem");
+                        System.Console.WriteLine("sól i pieprz");
+                        System.Console.WriteLine("1) Piekarnik nagrzać do 190 stopni C. Małe naczynie żaroodporne (o boku ok. 15 cm) posmarować oliwą. Bataty obrać i pokroić w melakserze na cienkie plasterki.");
+                        System.Console.WriteLine("2) Czosnek przecisnąć przez praskę, wymieszać z posiekanymi listkami rozmarynu, solą i pieprzem.");
+                        System.Console.WriteLine("3) Układać plasterki batatów w naczyniu, na zakładkę. Po 3 - 4 warstwach posypać mieszanką rozmarynu i czosnku i znów ułożyć 3 - 4 warstwy batatów. Zalać całość śmietanką.");
+                        System.Console.WriteLine("4) Przykryć folią aluminiową i piec przez 45 minut, zdjąć folię i zapiekać jeszcze przez 15 minut. Udekorować rozmarynem, posypać ostrą papryką.");
+                        break;
+                    }
 
                     else
                     {
@@ -215,6 +281,8 @@ namespace App
         public List<string> pasujace_skladniki_kurczak;
         public List<string> pasujace_skladniki_kurki;
         public List<string> pasujace_skladniki_spaghetti;
+        public List<string> pasujace_avocado;
+        public List<string> pasujace_batat;
 
 
         public List<string> list_products;
@@ -226,7 +294,8 @@ namespace App
         public List<string> makaron_z_kurkami;
         public List<string> spaghettiCarbonara;
         public List<string> kurczakzryzem;
-
+        public List<string> avocado;
+        public List<string> batat;
     }
     
 }

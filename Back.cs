@@ -10,8 +10,9 @@ namespace App
         int w = 0;
         int x = 0;
         int r = 0;
-
         int c = 0;
+        int a = 0;
+        int b = 0;
 
         public void TakeIngridients()
         {
@@ -89,6 +90,24 @@ namespace App
                         }
                         System.Console.WriteLine("\n\n");
                     }
+                    if( a > 0)
+                    {
+                        System.Console.WriteLine("Pasujące składniki do potrawy SAŁATKA Z AWOKADO I PIECZONYCH BATATÓW to: ");
+                        for (int i = 0; i < products.pasujace_avocado.Count; i++)
+                        {
+                            System.Console.WriteLine($"{products.pasujace_avocado[i]}");
+                        }
+                        System.Console.WriteLine("\n\n");
+                    }
+                    if( b > 0)
+                    {
+                        System.Console.WriteLine("Pasujące składniki do potrawy GRATIN Z BATATÓW: ");
+                        for (int i = 0; i < products.pasujace_batat.Count; i++)
+                        {
+                            System.Console.WriteLine($"{products.pasujace_batat[i]}");
+                        }
+                        System.Console.WriteLine("\n\n");
+                    }
                 }
                 else if(input == "nie")
                 {
@@ -103,7 +122,6 @@ namespace App
 
         public void Compare()
         {
-
             //Kurczak z ryzem
             foreach(var item in products.list_products)
             {
@@ -153,6 +171,23 @@ namespace App
                         c++;
                     }
                 }
+                //Avocado
+                for (int i = 0; i < products.avocado.Count; i++)
+                {
+                    if(item == products.avocado[i])
+                    {
+                        products.pasujace_avocado.Add(item);
+                    }
+                }
+                //Batat
+                for (int i = 0; i < products.batat.Count; i++)
+                {
+                    if(item == products.batat[i])
+                    {
+                        products.pasujace_batat.Add(item);
+                    }
+                }
+
             }
 
             //Kurczak z ryzem
@@ -167,7 +202,6 @@ namespace App
                 else
                 System.Console.WriteLine($"Znaleziono {q} pasujących składników na {kurczak}\n \n \n \n");
             }
-
             //Makaron z kurkami
             int kurki = products.makaron_z_kurkami.Count;
             if(w != 0)
@@ -180,7 +214,6 @@ namespace App
                 else
                 System.Console.WriteLine($"Znaleziono {w} pasujących składników na {kurki -2}\n \n \n \n");
             }
-
             //Spaghetti carbonare
             int carbonare = products.spaghettiCarbonara.Count;
             if(x != 0)
@@ -217,6 +250,30 @@ namespace App
                 System.Console.WriteLine($"Znaleziono {c} pasujące składniki na {ciecierzca}\n \n \n \n");
                 else
                 System.Console.WriteLine($"Znaleziono {c} pasujących składników na {ciecierzca}\n \n \n \n");
+            }
+            //Avocado
+            int avocado = products.avocado.Count;
+            if( a!= 0)
+            {
+                System.Console.WriteLine("Przepis na: SAŁATKA Z AWOKADO I PIECZONYCH BATATÓW");
+                if(a == 1)
+                System.Console.WriteLine($"Znaleziono {a} pasujący składnik na {avocado}\n \n \n \n");
+                else if(r > 1 && r < 5)
+                System.Console.WriteLine($"Znaleziono {a} pasujące składniki na {avocado}\n \n \n \n");
+                else
+                System.Console.WriteLine($"Znaleziono {a} pasujących składników na {avocado}\n \n \n \n");
+            }
+            //Batat
+            int batat = products.batat.Count;
+            if(b != 0)
+            {
+                System.Console.WriteLine("Przepis na: GRATIN Z BATATÓW");
+                if(b == 1)
+                System.Console.WriteLine($"Znaleziono {b} pasujący składnik na {batat}\n \n \n \n");
+                else if(r > 1 && r < 5)
+                System.Console.WriteLine($"Znaleziono {b} pasujące składniki na {batat}\n \n \n \n");
+                else
+                System.Console.WriteLine($"Znaleziono {b} pasujących składników na {batat}\n \n \n \n");
             }
         }
     }
