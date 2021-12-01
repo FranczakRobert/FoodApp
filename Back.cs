@@ -21,9 +21,11 @@ namespace App
             bool flag = true;
             while(flag == true)
             {
+                string input;
                 string ingridiends = Console.ReadLine();
-                products.AddProducts(ingridiends);
-                if(ingridiends == "Q"|| ingridiends == "q")
+                input = ingridiends.ToLower();
+                products.AddProducts(input);
+                if(input == "q")
                 break;
             }
         }
@@ -33,10 +35,12 @@ namespace App
             bool stop = false;
             while(stop == false)
             {
+                string input;
                 stop = true;
                 System.Console.WriteLine("Odpowiedz: tak/nie: ");
                 string odp0 = Console.ReadLine();
-                if(odp0 == "tak")
+                input =  odp0.ToLower();
+                if(input == "tak")
                 {
                     if(q > 0)
                     {
@@ -85,6 +89,10 @@ namespace App
                         }
                         System.Console.WriteLine("\n\n");
                     }
+                }
+                else if(input == "nie")
+                {
+                    break;
                 }
                 else
                 {
