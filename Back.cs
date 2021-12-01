@@ -88,7 +88,7 @@ namespace App
                 }
                 else
                 {
-                    stop = true;
+                    stop = false;
                 }
             }
         }
