@@ -9,13 +9,14 @@ namespace App
         {  
            curry = new List<string>();
            pasujace_curry = new List<string>();
-
+            curry.Add("");
             curry.Add("dynia");
             curry.Add("imbir");
             curry.Add("kalafior");
             curry.Add("passa pomidorowa");
             curry.Add("ciecierzyca");
             curry.Add("mleko kokosowe");
+            curry.Add("");
 
         }
 

@@ -9,7 +9,7 @@ namespace App
         {  
            bolognese = new List<string>();
            pasujace_bolognese = new List<string>();
-
+            bolognese.Add("");
             bolognese.Add("boczek");
             bolognese.Add("cebula");
             bolognese.Add("marchewka");
@@ -21,6 +21,7 @@ namespace App
             bolognese.Add("makaron");
             bolognese.Add("parmezan");
             bolognese.Add("seler");
+            bolognese.Add("");
 
         }
 

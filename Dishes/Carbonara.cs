@@ -10,12 +10,13 @@ namespace App
             spaghettiCarbonara = new List<string>();
             pasujace_skladniki_spaghetti = new List<string>(); 
 
-
+            spaghettiCarbonara.Add("");
             spaghettiCarbonara.Add("makaron");
             spaghettiCarbonara.Add("smietana");
             spaghettiCarbonara.Add("parmezan");
             spaghettiCarbonara.Add("jajka");
             spaghettiCarbonara.Add("boczek");
+            spaghettiCarbonara.Add("");
 
         }
 

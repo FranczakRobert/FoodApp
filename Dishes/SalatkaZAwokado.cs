@@ -7,7 +7,7 @@ namespace App
     {
         public SalatkaZAwokado()
         {  
-           avocado = new List<string>();
+            avocado = new List<string>();
             pasujace_avocado = new List<string>();
 
             avocado.Add("batat");
@@ -18,6 +18,7 @@ namespace App
             avocado.Add("cytryna");
             avocado.Add("avocado");
             avocado.Add("awokado");
+            avocado.Add("");
 
         }
 
