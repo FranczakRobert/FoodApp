@@ -10,14 +10,13 @@ namespace App
           makaron_z_kurkami = new List<string>();
           pasujace_skladniki_kurki = new List<string>();
 
-            makaron_z_kurkami.Add("");
             makaron_z_kurkami.Add("kurki");
             makaron_z_kurkami.Add("grzyby");
             makaron_z_kurkami.Add("makaron");
             makaron_z_kurkami.Add("smietana");
             makaron_z_kurkami.Add("śmietana");
             makaron_z_kurkami.Add("boczek");
-            makaron_z_kurkami.Add("");
+            
 
         }
 

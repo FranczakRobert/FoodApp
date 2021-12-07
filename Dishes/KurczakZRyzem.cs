@@ -10,13 +10,13 @@ namespace App
             kurczakzryzem = new List<string>();
            pasujace_skladniki_kurczak = new List<string>();
 
-            kurczakzryzem.Add("");
+            
             kurczakzryzem.Add("ryz");
             kurczakzryzem.Add("oliwa");
             kurczakzryzem.Add("kurczak");
             kurczakzryzem.Add("cebula");
             kurczakzryzem.Add("papryka");
-            kurczakzryzem.Add("");
+            
 
         }
 

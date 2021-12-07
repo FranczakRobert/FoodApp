@@ -10,7 +10,7 @@ namespace App
             batat = new List<string>();
             pasujace_batat = new List<string>();
 
-            batat.Add("");
+            
             batat.Add("batat");
             batat.Add("bataty");
             batat.Add("smietanka");
@@ -19,7 +19,7 @@ namespace App
             batat.Add("śmietanka");
             batat.Add("papryka");
             batat.Add("papryka ostra");
-            batat.Add("");
+            
 
         }
 

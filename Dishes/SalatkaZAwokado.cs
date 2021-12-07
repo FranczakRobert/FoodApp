@@ -18,7 +18,7 @@ namespace App
             avocado.Add("cytryna");
             avocado.Add("avocado");
             avocado.Add("awokado");
-            avocado.Add("");
+            
 
         }
 

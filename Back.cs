@@ -50,33 +50,35 @@ namespace App
                 
                 for (int i = 0; i < lista.Count; i++)
                 {
-                    if(nazwa == "KURCZAK Z RYZEM")
-                    a = parametr;
-
-                    if(nazwa == "SPAGHETTI ALLA CARBONARA")
-                    b = parametr;
-
-                    if(nazwa == "MAKARON Z KURKAMI I BOCZKIEM")
-                    c = parametr;
-
-                    if( nazwa == "SPAGHETTI BOLOGNESE")
-                    d = parametr;
-
-                    if(nazwa == "WARZYWNE CURRY Z DYNIĄ, KALAFIOREM I CIECIERZYCĄ")
-                    e = parametr;
-
-                    if(nazwa == "SAŁATKA Z AWOKADO I PIECZONYCH BATATÓW")
-                    f = parametr;
-
-                    if(nazwa == "GRATIN Z BATATÓW")
-                    g = parametr;
                     
                     if(item == lista[i])
                     {
                         pasujace.Add(item);
                         parametr++;
+
+                        if(nazwa == "KURCZAK Z RYZEM")
+                        a = parametr;
+
+                        if(nazwa == "SPAGHETTI ALLA CARBONARA")
+                        b = parametr;
+
+                        if(nazwa == "MAKARON Z KURKAMI I BOCZKIEM")
+                        c = parametr;
+
+                        if( nazwa == "SPAGHETTI BOLOGNESE")
+                        d = parametr;
+
+                        if(nazwa == "WARZYWNE CURRY Z DYNIĄ, KALAFIOREM I CIECIERZYCĄ")
+                        e = parametr;
+
+                        if(nazwa == "SAŁATKA Z AWOKADO I PIECZONYCH BATATÓW")
+                        f = parametr;
+
+                        if(nazwa == "GRATIN Z BATATÓW")
+                        g = parametr;
                     }
                 }
+
             if(parametr != 0)
             {
                 wybor0++;
@@ -88,7 +90,6 @@ namespace App
                 else
                 System.Console.WriteLine($"Znaleziono {parametr} pasujących składników na {lista.Count}\n \n \n \n");
                 break;
-                
             }
             
         }
