@@ -28,7 +28,7 @@ namespace App
                                                    "2 łyżki drobno posiekanej natki pietruszki\n"+
                                                    "30 g sera Pecorino (lub Parmezanu lub Grana Padano)\n"+
                                                    "sól i świeżo zmielony czarny pieprz \n \n";
-        public string recipe { get; set; } = "Oryginalny włoski przepis na makaron carbonara z boczkiem i sosem na bazie jajek. Prawdziwa carbonara nie zawiera śmietanki! \n" +
+        public string recipe { get; set; } = "PRZYGOTOWANIE: \n" +
                                             " 1) Makaron ugotować al dente w osolonej wodzie. Jajka sparzyć wrzątkiem, wbić do głębokiego talerza, doprawić solą i roztrzepać widelcem.\n" +
                                             " 2) Na patelnię włożyć pokrojony w kosteczkę boczek i podsmażyć na małym ogniu przez kilka minut aż się lekko zrumieni. Dodać starty czosnek oraz posiekaną natkę pietruszki i smażyć jeszcze przez kilkanaście sekund.\n" +
                                             " 3) Trzymając patelnię na małym ogniu dodać makaron i wymieszać. Odstawić z ognia, dodać połowę sera i doprawić świeżo zmielonym pieprzem.\n"+

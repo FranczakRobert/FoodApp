@@ -30,7 +30,7 @@ namespace App
                                                    "1 cebula\n"+
                                                    "200g kukurydzy \n \n";
 
-        public string recipe { get; set; } = 
+        public string recipe { get; set; } = "PRZYGOTOWANIE: \n" +
                                             " 1) Zaczynamy od ugotowania ryżu zgodnie z instrukcją podaną na opakowaniu.\n" +
                                             " 2) Mięso dokładnie myjemy i osuszamy na ręczniku papierowym. Kroimy w drobną kosteczkę.\n" +
                                             " 3) Mięso przekładamy do miski i posypujemy wybranymi przez siebie przyprawami. My doprawiliśmy je papryką w proszku i solą.\n"+

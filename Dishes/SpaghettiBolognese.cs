@@ -40,7 +40,7 @@ namespace App
                                                    "makaron spaghetti (75 g / porcję)\n"+
                                                    "tarty parmezan\n \n";
 
-        public string recipe { get; set; } = 
+        public string recipe { get; set; } = "PRZYGOTOWANIE: \n" +
                                             " 1) Boczek pokroić w drobną kostkę i włożyć na dużą patelnię, " +
                                             " wytopić na małym ogniu aż się zrumieni. Przesunąć na bok, w wytopiony " +
                                             " tłuszcz włożyć drobno posiekaną cebulę i zeszklić. Dodać drobno posiekany"+

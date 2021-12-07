@@ -28,7 +28,7 @@ namespace App
                                                    "300 g makaronu\n"+
                                                    "odrobina masła)\n";
 
-        public string recipe { get; set; } = 
+        public string recipe { get; set; } = "PRZYGOTOWANIE: \n" +
                                             " 1) Makaron gotujemy al dente, a cebulę pokrojoną w drobną kostkę podsmażany na odrobinie masła. Do zeszklonej cebulki należy dodać boczek i całość chwilę przesmażyć. \n" +
                                             " 2) Następnie do sosu dodajemy kurki, a po chwili również śmietaną. Co ważne, śmietanę mieszamy wcześniej w 2 łyżkami z wody od makaronu. Całość mieszamy do połączenia. Sos przyprawiamy na patelni solą i pieprzem. Dodajemy ugotowany makaron.\n";
         

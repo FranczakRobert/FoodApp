@@ -149,49 +149,49 @@ namespace App
                     input = odp.ToLower();
                     if(input == "spaghetti alla carbonara")
                     {
-                        
+                        System.Console.WriteLine("\n");
                         carbonara.ShowIngredients();
                         carbonara.ShowRecipies();
                         break;
                     }
                     if(input == "kurczak z ryzem")
                     {
-                       
+                        System.Console.WriteLine("\n");
                         kurczakZRyzem.ShowIngredients();
                         kurczakZRyzem.ShowRecipies();
                         break;
                     }
                     if(input == "makaron z kurkami i boczkiem")
                     {
-                        
+                        System.Console.WriteLine("\n");
                         makaronZKurkami.ShowIngredients();
                         makaronZKurkami.ShowRecipies();
                         break;
                     }
                     if(input == "spaghetti bolognese")
                     {
-                        
+                        System.Console.WriteLine("\n");
                         spaghettiBolognese.ShowIngredients();
                         spaghettiBolognese.ShowRecipies();
                         break;
                     }
                     if(input == "warzywne curry z dynia kalafiorem i ciecierzyca")
                     {
-                        
+                        System.Console.WriteLine("\n");
                         warzywneCurry.ShowIngredients();
                         warzywneCurry.ShowRecipies();
                         break;
                     }
                     if(input == "salatka z awokado i pieczonych batatow")
                     {
-                        
+                        System.Console.WriteLine("\n");
                         salatkaZAwokado.ShowIngredients();
                         salatkaZAwokado.ShowRecipies();
                         break;
                     }
                     if(input == "gratin z batatow")
                     {   
-                        
+                        System.Console.WriteLine("\n");
                         gratinZBatatow.ShowIngredients();
                         gratinZBatatow.ShowRecipies();
                         break;

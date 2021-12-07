@@ -37,7 +37,7 @@ namespace App
                                                    "1 łyżka oliwy extra vergine \n"+
                                                    "1 łyżka soku z cytryny \n"+
                                                    "1 łyżka octu ryżowego lub winnego\n\n \n";
-        public string recipe { get; set; } = 
+        public string recipe { get; set; } = "PRZYGOTOWANIE: \n" +
                                             " 1) Bataty obrać, pokroić w kosteczkę. Skropić oliwą, doprawić solą," +
                                             " pieprzem, chili i listkami rozmarynu jeśli ich używamy.\n" +
                                             " 2) Wymieszać i ułożyć na blaszce do pieczenia lub w naczyniu żaroodpornym, wstawić do piekarnika"+

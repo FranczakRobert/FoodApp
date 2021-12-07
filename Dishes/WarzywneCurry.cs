@@ -34,7 +34,7 @@ namespace App
                                                    "300 g ciecierzycy z puszki \n"+
                                                    "250 ml mleka kokosowego\n\n";
                                               
-        public string recipe { get; set; } = 
+        public string recipe { get; set; } = "PRZYGOTOWANIE: \n" +
                                             " 1) Dynię obrać ze skóry i pestek, miąższ pokroić w kostkę.\n" +
                                             " 2) Cebulę obrać i pokroić na cienkie półplasterki.\n" +
                                             " 3) Rozgrzać olej w większym garnku, dodać cebulę i zeszklić ją.\n"+
