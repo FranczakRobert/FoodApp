@@ -5,6 +5,10 @@ namespace App
 {
     public class Back 
     {
+        public Back()
+        {
+            list_products = new List<string>();
+        }
         Carbonara carbonara = new Carbonara();
         KurczakZRyzem kurczakZRyzem = new KurczakZRyzem();
         MakaronZKurkami makaronZKurkami = new MakaronZKurkami();
@@ -12,9 +16,11 @@ namespace App
         WarzywneCurry warzywneCurry = new WarzywneCurry();
         SalatkaZAwokado salatkaZAwokado = new SalatkaZAwokado();
         GratinZBatatow gratinZBatatow = new GratinZBatatow();
-        Products products = new Products();
 
-        int parametr = 0; 
+        public void AddProducts(string ingridients)
+        {
+            list_products.Add(ingridients);
+        }
 
         public void TakeIngridients()
         {
@@ -27,17 +33,18 @@ namespace App
                 string input;
                 string ingridiends = Console.ReadLine();
                 input = ingridiends.ToLower();
-                products.AddProducts(input);
+                this.AddProducts(input);
                 if(input == "q")
                 break;
             }
         }
 
         int a =0,b =0,c =0,d =0,e =0,f=0,g=0;
+        int parametr = 0; 
         public void Compare(string nazwa, int parametr, List<string> lista, List<string> pasujace)
         {
             
-           foreach(var item in products.list_products)
+           foreach(var item in list_products)
             {
 
                 for (int i = 0; i < lista.Count; i++)
@@ -132,6 +139,72 @@ namespace App
                     break;
                 }
             }
-        }    
+        }   
+        public void ShowRecipes(string odp)
+        {
+            
+            bool end = true;
+            while(end == true)
+            {       string input;
+                    input = odp.ToLower();
+                    if(input == "spaghetti alla carbonara")
+                    {
+                        
+                        carbonara.ShowIngridiens();
+                        carbonara.ShowRecipies();
+                        break;
+                    }
+                    if(input == "kurczak z ryzem")
+                    {
+                       
+                        kurczakZRyzem.ShowIngridiens();
+                        kurczakZRyzem.ShowRecipies();
+                        break;
+                    }
+                    if(input == "makaron z kurkami i boczkiem")
+                    {
+                        
+                        makaronZKurkami.ShowIngridiens();
+                        makaronZKurkami.ShowRecipies();
+                        break;
+                    }
+                    if(input == "spaghetti bolognese")
+                    {
+                        
+                        spaghettiBolognese.ShowIngridiens();
+                        spaghettiBolognese.ShowRecipies();
+                        break;
+                    }
+                    if(input == "warzywne curry z dynią, kalafiorem i ciecierzycą")
+                    {
+                        
+                        warzywneCurry.ShowIngridiens();
+                        warzywneCurry.ShowRecipies();
+                        break;
+                    }
+                    if(input == "sałatka z awokado i pieczonych batatów")
+                    {
+                        
+                        salatkaZAwokado.ShowIngridiens();
+                        salatkaZAwokado.ShowRecipies();
+                        break;
+                    }
+                    if(input == "gratin z batatów")
+                    {   
+                        
+                        gratinZBatatow.ShowIngridiens();
+                        gratinZBatatow.ShowRecipies();
+                        break;
+                    }
+                    else
+                    {
+                        System.Console.WriteLine("Nie było takiej potrawy na liście!");
+                    }
+                System.Console.WriteLine("Wpisz ponownie pierwszy człon nazwy potrawy!");
+                odp = Console.ReadLine();
+
+            }
+        } 
+        public List<string> list_products;
 }
 }

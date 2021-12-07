@@ -7,7 +7,6 @@ namespace App
     {
         static void Main(string[] args)
         {
-            Products products = new Products();
             Back back = new Back();
             back.TakeIngridients();
             back.ShowFood();
@@ -15,7 +14,7 @@ namespace App
             back.Show();
             System.Console.WriteLine("Wybierz potrawe, aby wyświetlić jej przygotowanie:");
             string odp = Console.ReadLine();
-            products.ShowRecipes(odp);
+            back.ShowRecipes(odp);
             
             
         }
