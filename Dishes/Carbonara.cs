@@ -36,7 +36,7 @@ namespace App
                                             " 5) Wyłożyć na talerze i posypać pozostałym serem.";
         
 
-        public void ShowIngridiens()
+        public void ShowIngredients()
         {
             System.Console.WriteLine(ingridiends);
         }

@@ -46,7 +46,7 @@ namespace App
                                             
         
 
-        public void ShowIngridiens()
+        public void ShowIngredients()
         {
             System.Console.WriteLine(ingridiends);
         }

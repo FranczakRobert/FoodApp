@@ -41,7 +41,7 @@ namespace App
 
         int a =0,b =0,c =0,d =0,e =0,f=0,g=0;
         int parametr = 0; 
-        public void Compare(string nazwa, int parametr, List<string> lista, List<string> pasujace)
+        public void LookingForRecipies(string nazwa, int parametr, List<string> lista, List<string> pasujace)
         {
             
            foreach(var item in list_products)
@@ -91,17 +91,17 @@ namespace App
     }
     public void ShowFood()
     {
-        this.Compare("KURCZAK Z RYZEM", parametr , kurczakZRyzem.kurczakzryzem, kurczakZRyzem.pasujace_skladniki_kurczak);
-        this.Compare("SPAGHETTI ALLA CARBONARA", parametr , carbonara.spaghettiCarbonara, carbonara.pasujace_skladniki_spaghetti);
-        this.Compare("MAKARON Z KURKAMI I BOCZKIEM", parametr, makaronZKurkami.makaron_z_kurkami, makaronZKurkami.pasujace_skladniki_kurki);
-        this.Compare("SPAGHETTI BOLOGNESE", parametr , spaghettiBolognese.bolognese , spaghettiBolognese.pasujace_bolognese);
-        this.Compare("WARZYWNE CURRY Z DYNIĄ, KALAFIOREM I CIECIERZYCĄ", parametr , warzywneCurry.curry, warzywneCurry.pasujace_curry);
-        this.Compare("SAŁATKA Z AWOKADO I PIECZONYCH BATATÓW", parametr, salatkaZAwokado.avocado, salatkaZAwokado.pasujace_avocado);
-        this.Compare("GRATIN Z BATATÓW", parametr , gratinZBatatow.batat, gratinZBatatow.pasujace_batat);
+        this.LookingForRecipies("KURCZAK Z RYZEM", parametr , kurczakZRyzem.kurczakzryzem, kurczakZRyzem.pasujace_skladniki_kurczak);
+        this.LookingForRecipies("SPAGHETTI ALLA CARBONARA", parametr , carbonara.spaghettiCarbonara, carbonara.pasujace_skladniki_spaghetti);
+        this.LookingForRecipies("MAKARON Z KURKAMI I BOCZKIEM", parametr, makaronZKurkami.makaron_z_kurkami, makaronZKurkami.pasujace_skladniki_kurki);
+        this.LookingForRecipies("SPAGHETTI BOLOGNESE", parametr , spaghettiBolognese.bolognese , spaghettiBolognese.pasujace_bolognese);
+        this.LookingForRecipies("WARZYWNE CURRY Z DYNIĄ, KALAFIOREM I CIECIERZYCĄ", parametr , warzywneCurry.curry, warzywneCurry.pasujace_curry);
+        this.LookingForRecipies("SAŁATKA Z AWOKADO I PIECZONYCH BATATÓW", parametr, salatkaZAwokado.avocado, salatkaZAwokado.pasujace_avocado);
+        this.LookingForRecipies("GRATIN Z BATATÓW", parametr , gratinZBatatow.batat, gratinZBatatow.pasujace_batat);
     }
 
 
-    public void PasujaceSkladniki(string nazwa, int parametr, List<string> pasujaceSkladniki)
+    public void CompareIngredients(string nazwa, int parametr, List<string> pasujaceSkladniki)
     {
         if(parametr > 0)
             {
@@ -114,7 +114,7 @@ namespace App
                 System.Console.WriteLine("\n");
             }
     }
-          public void Show()
+          public void ShowIngredients()
         {  
             bool stop = false;
             while(stop == false)
@@ -126,13 +126,13 @@ namespace App
                 input =  odp0.ToLower();
                 if(input == "tak")
                 {
-                    this.PasujaceSkladniki("KURCZAK Z RYZEM", a , kurczakZRyzem.pasujace_skladniki_kurczak);
-                    this.PasujaceSkladniki("SPAGHETTI ALLA CARBONARA", b , carbonara.pasujace_skladniki_spaghetti);
-                    this.PasujaceSkladniki("MAKARON Z KURKAMI I BOCZKIEM", c , makaronZKurkami.pasujace_skladniki_kurki);
-                    this.PasujaceSkladniki("SPAGHETTI BOLOGNESE", d , spaghettiBolognese.pasujace_bolognese);
-                    this.PasujaceSkladniki("WARZYWNE CURRY Z DYNIĄ, KALAFIOREM I CIECIERZYCĄ", e , warzywneCurry.pasujace_curry);
-                    this.PasujaceSkladniki("SAŁATKA Z AWOKADO I PIECZONYCH BATATÓW", f , salatkaZAwokado.pasujace_avocado);
-                    this.PasujaceSkladniki("GRATIN Z BATATÓW", g , gratinZBatatow.pasujace_batat);
+                    this.CompareIngredients("KURCZAK Z RYZEM", a , kurczakZRyzem.pasujace_skladniki_kurczak);
+                    this.CompareIngredients("SPAGHETTI ALLA CARBONARA", b , carbonara.pasujace_skladniki_spaghetti);
+                    this.CompareIngredients("MAKARON Z KURKAMI I BOCZKIEM", c , makaronZKurkami.pasujace_skladniki_kurki);
+                    this.CompareIngredients("SPAGHETTI BOLOGNESE", d , spaghettiBolognese.pasujace_bolognese);
+                    this.CompareIngredients("WARZYWNE CURRY Z DYNIĄ, KALAFIOREM I CIECIERZYCĄ", e , warzywneCurry.pasujace_curry);
+                    this.CompareIngredients("SAŁATKA Z AWOKADO I PIECZONYCH BATATÓW", f , salatkaZAwokado.pasujace_avocado);
+                    this.CompareIngredients("GRATIN Z BATATÓW", g , gratinZBatatow.pasujace_batat);
                 }
                 else if(input == "nie")
                 {
@@ -150,49 +150,49 @@ namespace App
                     if(input == "spaghetti alla carbonara")
                     {
                         
-                        carbonara.ShowIngridiens();
+                        carbonara.ShowIngredients();
                         carbonara.ShowRecipies();
                         break;
                     }
                     if(input == "kurczak z ryzem")
                     {
                        
-                        kurczakZRyzem.ShowIngridiens();
+                        kurczakZRyzem.ShowIngredients();
                         kurczakZRyzem.ShowRecipies();
                         break;
                     }
                     if(input == "makaron z kurkami i boczkiem")
                     {
                         
-                        makaronZKurkami.ShowIngridiens();
+                        makaronZKurkami.ShowIngredients();
                         makaronZKurkami.ShowRecipies();
                         break;
                     }
                     if(input == "spaghetti bolognese")
                     {
                         
-                        spaghettiBolognese.ShowIngridiens();
+                        spaghettiBolognese.ShowIngredients();
                         spaghettiBolognese.ShowRecipies();
                         break;
                     }
                     if(input == "warzywne curry z dynią, kalafiorem i ciecierzycą")
                     {
                         
-                        warzywneCurry.ShowIngridiens();
+                        warzywneCurry.ShowIngredients();
                         warzywneCurry.ShowRecipies();
                         break;
                     }
                     if(input == "sałatka z awokado i pieczonych batatów")
                     {
                         
-                        salatkaZAwokado.ShowIngridiens();
+                        salatkaZAwokado.ShowIngredients();
                         salatkaZAwokado.ShowRecipies();
                         break;
                     }
                     if(input == "gratin z batatów")
                     {   
                         
-                        gratinZBatatow.ShowIngridiens();
+                        gratinZBatatow.ShowIngredients();
                         gratinZBatatow.ShowRecipies();
                         break;
                     }

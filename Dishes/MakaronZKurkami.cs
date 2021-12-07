@@ -33,7 +33,7 @@ namespace App
                                             " 2) Następnie do sosu dodajemy kurki, a po chwili również śmietaną. Co ważne, śmietanę mieszamy wcześniej w 2 łyżkami z wody od makaronu. Całość mieszamy do połączenia. Sos przyprawiamy na patelni solą i pieprzem. Dodajemy ugotowany makaron.\n";
         
 
-        public void ShowIngridiens()
+        public void ShowIngredients()
         {
             System.Console.WriteLine(ingridiends);
         }

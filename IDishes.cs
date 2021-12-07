@@ -10,7 +10,7 @@ namespace App
         string ingridiends {get; set;}
 
         void ShowRecipies();
-        void ShowIngridiens();
+        void ShowIngredients();
 
     }
 }
