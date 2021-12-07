@@ -126,7 +126,7 @@ namespace App
 
                     if(c > 0)
                     {
-                        System.Console.Write("Pasujące składniki do potrawy MAKARON Z KURKAMI I BOCZKIEM to: ");
+                         System.Console.Write("Pasujące składniki do potrawy MAKARON Z KURKAMI I BOCZKIEM to: ");
                         for (int i = 0; i < makaronZKurkami.pasujace_skladniki_kurki.Count; i++)
                         {
                             System.Console.Write($" {makaronZKurkami.pasujace_skladniki_kurki[i]}");
