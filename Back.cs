@@ -175,21 +175,21 @@ namespace App
                         spaghettiBolognese.ShowRecipies();
                         break;
                     }
-                    if(input == "warzywne curry z dynią, kalafiorem i ciecierzycą")
+                    if(input == "warzywne curry z dynia kalafiorem i ciecierzyca")
                     {
                         
                         warzywneCurry.ShowIngredients();
                         warzywneCurry.ShowRecipies();
                         break;
                     }
-                    if(input == "sałatka z awokado i pieczonych batatów")
+                    if(input == "salatka z awokado i pieczonych batatow")
                     {
                         
                         salatkaZAwokado.ShowIngredients();
                         salatkaZAwokado.ShowRecipies();
                         break;
                     }
-                    if(input == "gratin z batatów")
+                    if(input == "gratin z batatow")
                     {   
                         
                         gratinZBatatow.ShowIngredients();

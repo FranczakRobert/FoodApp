@@ -12,7 +12,7 @@ namespace App
             back.ShowFood();
             System.Console.WriteLine("Czy chcesz zobaczyc które z podanych przez Ciebie składników pasują do poszczególnych potraw?");
             back.ShowIngredients();
-            System.Console.WriteLine("Wpisz nazwę potrawy, aby wyświetlić jej przygotowanie:");
+            System.Console.WriteLine("Wpisz nazwę potrawy (bez polskich znaków), aby wyświetlić jej przygotowanie:");
             string odp = Console.ReadLine();
             back.ShowRecipes(odp);
             
