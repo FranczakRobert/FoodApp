@@ -92,6 +92,21 @@ namespace App
         this.Compare("SAŁATKA Z AWOKADO I PIECZONYCH BATATÓW", parametr, salatkaZAwokado.avocado, salatkaZAwokado.pasujace_avocado);
         this.Compare("GRATIN Z BATATÓW", parametr , gratinZBatatow.batat, gratinZBatatow.pasujace_batat);
     }
+
+
+    public void PasujaceSkladniki(string nazwa, int parametr, List<string> pasujaceSkladniki)
+    {
+        if(parametr > 0)
+            {
+                System.Console.Write($" \nPasujące składniki do potrawy {nazwa} to: ");
+
+                for (int i = 0; i < pasujaceSkladniki.Count; i++)
+                {
+                        System.Console.Write($" {pasujaceSkladniki[i]}");
+                }
+                    System.Console.WriteLine("\n");
+            }
+    }
           public void Show()
         {  
             bool stop = false;
@@ -104,71 +119,13 @@ namespace App
                 input =  odp0.ToLower();
                 if(input == "tak")
                 {
-                    if(a > 0)
-                    {
-                        System.Console.Write("Pasujące składniki do potrawy KURCZAK Z RYZEM to: ");
-                        for (int i = 0; i < kurczakZRyzem.pasujace_skladniki_kurczak.Count; i++)
-                        {
-                            System.Console.Write($" {kurczakZRyzem.pasujace_skladniki_kurczak[i]}");
-                        }
-                        System.Console.WriteLine("");
-                    }
-
-                    if(b > 0)
-                    {
-                        System.Console.Write("Pasujące składniki do potrawy SPAGHETTI ALLA CARBONARA to: ");
-                        for (int i = 0; i < carbonara.pasujace_skladniki_spaghetti.Count; i++)
-                        {
-                            System.Console.Write($" {carbonara.pasujace_skladniki_spaghetti[i]}");
-                        }
-                        System.Console.WriteLine("\n\n");
-                    }
-
-                    if(c > 0)
-                    {
-                         System.Console.Write("Pasujące składniki do potrawy MAKARON Z KURKAMI I BOCZKIEM to: ");
-                        for (int i = 0; i < makaronZKurkami.pasujace_skladniki_kurki.Count; i++)
-                        {
-                            System.Console.Write($" {makaronZKurkami.pasujace_skladniki_kurki[i]}");
-                        }
-                        System.Console.WriteLine("\n\n");
-                    }
-                    if(d > 0)
-                    {
-                        System.Console.Write("Pasujące składniki do potrawy SPAGHETTI BOLOGNESE to: ");
-                        for (int i = 0; i < spaghettiBolognese.pasujace_bolognese.Count; i++)
-                        {
-                            System.Console.Write($" {spaghettiBolognese.pasujace_bolognese[i]}");
-                        }
-                        System.Console.WriteLine("\n\n");
-                    }
-                    if(e > 0)
-                    {
-                        System.Console.WriteLine("Pasujące składniki do potrawy WARZYWNE CURRY Z DYNIĄ, KALAFIOREM I CIECIERZYCĄ to: ");
-                        for (int i = 0; i < warzywneCurry.pasujace_curry.Count; i++)
-                        {
-                            System.Console.Write($" {warzywneCurry.pasujace_curry[i]}");
-                        }
-                        System.Console.WriteLine("\n\n");
-                    }
-                    if( f > 0)
-                    {
-                        System.Console.WriteLine("Pasujące składniki do potrawy SAŁATKA Z AWOKADO I PIECZONYCH BATATÓW to: ");
-                        for (int i = 0; i < salatkaZAwokado.pasujace_avocado.Count; i++)
-                        {
-                            System.Console.WriteLine($"{salatkaZAwokado.pasujace_avocado[i]}");
-                        }
-                        System.Console.WriteLine("\n\n");
-                    }
-                    if( g > 0)
-                    {
-                        System.Console.WriteLine("Pasujące składniki do potrawy GRATIN Z BATATÓW: ");
-                        for (int i = 0; i < gratinZBatatow.pasujace_batat.Count; i++)
-                        {
-                            System.Console.WriteLine($"{gratinZBatatow.pasujace_batat[i]}");
-                        }
-                        System.Console.WriteLine("\n\n");
-                    }
+                    this.PasujaceSkladniki("KURCZAK Z RYZEM", a , kurczakZRyzem.pasujace_skladniki_kurczak);
+                    this.PasujaceSkladniki("SPAGHETTI ALLA CARBONARA", b , carbonara.pasujace_skladniki_spaghetti);
+                    this.PasujaceSkladniki("MAKARON Z KURKAMI I BOCZKIEM", c , makaronZKurkami.pasujace_skladniki_kurki);
+                    this.PasujaceSkladniki("SPAGHETTI BOLOGNESE", d , spaghettiBolognese.pasujace_bolognese);
+                    this.PasujaceSkladniki("WARZYWNE CURRY Z DYNIĄ, KALAFIOREM I CIECIERZYCĄ", e , warzywneCurry.pasujace_curry);
+                    this.PasujaceSkladniki("SAŁATKA Z AWOKADO I PIECZONYCH BATATÓW", f , salatkaZAwokado.pasujace_avocado);
+                    this.PasujaceSkladniki("GRATIN Z BATATÓW", g , gratinZBatatow.pasujace_batat);
                 }
                 else if(input == "nie")
                 {
