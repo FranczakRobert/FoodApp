@@ -249,7 +249,7 @@ namespace App
                         System.Console.WriteLine("5) Wymieszać składniki sosu i polać po sałatce.");
                         break;
                     }
-                    if(input == "grtin z batatów")
+                    if(input == "gratin z batatów")
                     {   
                         System.Console.WriteLine("GRATIN Z BATATÓW");
                         System.Console.WriteLine("SKŁANIKI");
