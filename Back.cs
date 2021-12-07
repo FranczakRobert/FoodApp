@@ -104,7 +104,7 @@ namespace App
                 {
                         System.Console.Write($" {pasujaceSkladniki[i]}");
                 }
-                    System.Console.WriteLine("\n");
+                System.Console.WriteLine("\n");
             }
     }
           public void Show()
