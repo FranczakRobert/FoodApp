@@ -60,8 +60,6 @@ namespace App
                         pasujace.Add(item);
                         parametr++;
                     }
-
-                    
                 }
             if(parametr != 0)
             {
@@ -167,10 +165,6 @@ namespace App
                 else if(input == "nie")
                 {
                     break;
-                }
-                else
-                {
-                    stop = false;
                 }
             }
         }    

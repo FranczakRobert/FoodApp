@@ -83,7 +83,7 @@ namespace App
             batat.Add("bataty");
             batat.Add("smietanka");
             batat.Add("śmietanka");
-            batat.Add("śmietana");
+            batat.Add("smietana");
             batat.Add("śmietanka");
             batat.Add("papryka");
             batat.Add("papryka ostra");
@@ -102,7 +102,7 @@ namespace App
             while(end == true)
             {       string input;
                     input = odp.ToLower();
-                    if(input == "spaghetti")
+                    if(input == "spaghetti alla carbonara")
                     {
                         System.Console.WriteLine("SPAGHETTI ALLA CARBONARA");
                         System.Console.WriteLine("Oryginalny włoski przepis na makaron carbonara z boczkiem i sosem na bazie jajek. Prawdziwa carbonara nie zawiera śmietanki! \n");
@@ -122,7 +122,7 @@ namespace App
                         System.Console.WriteLine(" 5) Wyłożyć na talerze i posypać pozostałym serem.");
                         break;
                     }
-                    if(input == "kurczak")
+                    if(input == "kurczak z ryzem")
                     {
                         System.Console.WriteLine("KURCZAK Z RYZEM");
                         System.Console.WriteLine("Ryż z kurczakiem jest to również dobry pomysł na obiad poza domem. Spokojnie możemy zrobić ten posiłek rano, spakować do pudełka i skonsumować za kilka godzin! \n");
@@ -147,7 +147,7 @@ namespace App
                         System.Console.WriteLine("8. Inną propozycją podania jest wyłożenie na talerz ryżu i nasypania na wierzch warzyw i mięsa.");
                         break;
                     }
-                    if(input == "kurki")
+                    if(input == "makaron z kurkami i boczkiem")
                     {
                         System.Console.WriteLine("MAKARON Z KURKAMI I BOCZKIEM");
                         System.Console.WriteLine("Makaron z kurkami w sosie śmietanowym to punkt obowiązkowy jakże krótkiego sezonu na kurki. Jego przygotowanie trwa tyle, co czas gotowania makaronu");
@@ -163,7 +163,7 @@ namespace App
                         System.Console.WriteLine("2) Następnie do sosu dodajemy kurki, a po chwili również śmietaną. Co ważne, śmietanę mieszamy wcześniej w 2 łyżkami z wody od makaronu. Całość mieszamy do połączenia. Sos przyprawiamy na patelni solą i pieprzem. Dodajemy ugotowany makaron.");
                         break;
                     }
-                    if(input == "bolognese")
+                    if(input == "spaghetti bolognese")
                     {
                         System.Console.WriteLine("SPAGHETTI BOLOGNESE");
                         System.Console.WriteLine("SKŁADNIKI: ");
@@ -193,7 +193,7 @@ namespace App
                         System.Console.WriteLine();
                         break;
                     }
-                    if(input == "ciecierzyca")
+                    if(input == "warzywne curry z dynią, kalafiorem i ciecierzycą")
                     {
                         System.Console.WriteLine("WARZYWNE CURRY Z DYNIĄ, KALAFIOREM I CIECIERZYCĄ");
                         System.Console.WriteLine("SKŁADNIKI");
@@ -220,7 +220,7 @@ namespace App
                         System.Console.WriteLine("8) Wymieszać i gotować przez ok. 10 minut. Podawać z ugotowanym ryżem i świeżą kolendrą.");
                         break;
                     }
-                    if(input == "avocado")
+                    if(input == "sałatka z awokado i pieczonych batatów")
                     {
                         System.Console.WriteLine("SAŁATKA Z AWOKADO I PIECZONYCH BATATÓW");
                         System.Console.WriteLine("SKŁADNIKI");
@@ -249,7 +249,7 @@ namespace App
                         System.Console.WriteLine("5) Wymieszać składniki sosu i polać po sałatce.");
                         break;
                     }
-                    if(input == "batat")
+                    if(input == "grtin z batatów")
                     {   
                         System.Console.WriteLine("GRATIN Z BATATÓW");
                         System.Console.WriteLine("SKŁANIKI");
