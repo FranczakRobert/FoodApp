@@ -52,12 +52,13 @@ namespace App
 
         public void ShowIngredients()
         {
+            System.Console.WriteLine(name);
             System.Console.WriteLine(ingridiends);
         }
 
         public void ShowRecipies()
         {
-            System.Console.WriteLine(name);
+           
             System.Console.WriteLine(recipe);
         }
 

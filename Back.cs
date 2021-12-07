@@ -153,94 +153,102 @@ namespace App
         }   
         public void ShowRecipes(string odp)
         {
-
+            int input;
             wybor =1;
             bool end = true;
             while(end == true)
-            {       int input;
-                    input = int.Parse(odp);
-                    if(a > 0 && input == wybor)
-                    {
-                        System.Console.WriteLine("\n");
-                        kurczakZRyzem.ShowIngredients();
-                        kurczakZRyzem.ShowRecipies();
-                        break;
-                    }
-                    else if( a > 0)
-                    {
-                        wybor++;
-                    }
-                    if(b > 0 && input == wybor)
-                    {
-                        System.Console.WriteLine("\n");
-                        carbonara.ShowIngredients();
-                        carbonara.ShowRecipies();
-                        break;
-                    }
-                    else if( b > 0)
-                    {
-                        wybor++;
-                    }
-                    if(c > 0 && input == wybor)
-                    {
-                        System.Console.WriteLine("\n");
-                        makaronZKurkami.ShowIngredients();
-                        makaronZKurkami.ShowRecipies();
-                        break;
-                    }
-                    else if( c > 0)
-                    {
-                        wybor++;
-                    }
-                    if(d > 0 && input == wybor)
-                    {
-                        System.Console.WriteLine("\n");
-                        spaghettiBolognese.ShowIngredients();
-                        spaghettiBolognese.ShowRecipies();
-                        break;
-                    }
-                    else if( d > 0)
-                    {
-                        wybor++;
-                    }
-                    if(e > 0 && input == wybor)
-                    {
-                        System.Console.WriteLine("\n");
-                        warzywneCurry.ShowIngredients();
-                        warzywneCurry.ShowRecipies();
-                        break;
-                    }
-                    else if( e > 0)
-                    {
-                        wybor++;
-                    }
-                    if(f > 0 && input == wybor)
-                    {
-                        System.Console.WriteLine("\n");
-                        salatkaZAwokado.ShowIngredients();
-                        salatkaZAwokado.ShowRecipies();
-                        break;
-                    }
-                    else if( f > 0)
-                    {
-                        wybor++;
-                    }
-                    if(g > 0 && input == wybor)
-                    {   
-                        System.Console.WriteLine("\n");
-                        gratinZBatatow.ShowIngredients();
-                        gratinZBatatow.ShowRecipies();
-                        break;
-                    }
-                    else if( g > 0)
-                    {
-                        wybor++;
-                    }
-                    else
-                    {
-                        System.Console.WriteLine("Nie było takiej potrawy na liście!");
-                    }
-                System.Console.WriteLine("Wpisz ponownie pierwszy człon nazwy potrawy!");
+            {       
+                try
+                {
+                        input = int.Parse(odp);
+                        if(a > 0 && input == wybor)
+                        {
+                            System.Console.WriteLine("\n");
+                            kurczakZRyzem.ShowIngredients();
+                            kurczakZRyzem.ShowRecipies();
+                            break;
+                        }
+                        else if( a > 0)
+                        {
+                            wybor++;
+                        }
+                        if(b > 0 && input == wybor)
+                        {
+                            System.Console.WriteLine("\n");
+                            carbonara.ShowIngredients();
+                            carbonara.ShowRecipies();
+                            break;
+                        }
+                        else if( b > 0)
+                        {
+                            wybor++;
+                        }
+                        if(c > 0 && input == wybor)
+                        {
+                            System.Console.WriteLine("\n");
+                            makaronZKurkami.ShowIngredients();
+                            makaronZKurkami.ShowRecipies();
+                            break;
+                        }
+                        else if( c > 0)
+                        {
+                            wybor++;
+                        }
+                        if(d > 0 && input == wybor)
+                        {
+                            System.Console.WriteLine("\n");
+                            spaghettiBolognese.ShowIngredients();
+                            spaghettiBolognese.ShowRecipies();
+                            break;
+                        }
+                        else if( d > 0)
+                        {
+                            wybor++;
+                        }
+                        if(e > 0 && input == wybor)
+                        {
+                            System.Console.WriteLine("\n");
+                            warzywneCurry.ShowIngredients();
+                            warzywneCurry.ShowRecipies();
+                            break;
+                        }
+                        else if( e > 0)
+                        {
+                            wybor++;
+                        }
+                        if(f > 0 && input == wybor)
+                        {
+                            System.Console.WriteLine("\n");
+                            salatkaZAwokado.ShowIngredients();
+                            salatkaZAwokado.ShowRecipies();
+                            break;
+                        }
+                        else if( f > 0)
+                        {
+                            wybor++;
+                        }
+                        if(g > 0 && input == wybor)
+                        {   
+                            System.Console.WriteLine("\n");
+                            gratinZBatatow.ShowIngredients();
+                            gratinZBatatow.ShowRecipies();
+                            break;
+                        }
+                        else if( g > 0)
+                        {
+                            wybor++;
+                        }
+                        else
+                        {
+                            System.Console.WriteLine("Nie było takiej potrawy na liście!");
+                        }
+                        System.Console.WriteLine("Wpisz ponownie pierwszy człon nazwy potrawy!");
+                        odp = Console.ReadLine();
+                }
+                catch
+                {
+                    System.Console.WriteLine("Błędny format");
+                }
                 odp = Console.ReadLine();
 
             }
