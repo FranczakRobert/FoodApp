@@ -42,18 +42,30 @@ namespace App
         int a =0,b =0,c =0,d =0,e =0,f=0,g=0;
         int parametr = 0; 
         int wybor0 = 0;
+        string o = "";
         public void LookingForRecipies(string nazwa, int parametr, List<string> lista, List<string> pasujace)
         {
             
-           foreach(var item in list_products)
-            {
+           for (int p = 0; p < list_products.Count; p++)
+           {
+               string x = list_products[p];
+               int esc = 0;
+               if(x == o)
+               {
+                   continue;
+               }
                 
                 for (int i = 0; i < lista.Count; i++)
                 {
-                    
-                    if(item == lista[i])
+                    if(x == "q")
                     {
-                        pasujace.Add(item);
+                        o = "";
+                        break;
+                    }
+
+                    if(x == lista[i])
+                    {
+                        pasujace.Add(x);
                         parametr++;
 
                         if(nazwa == "KURCZAK Z RYZEM")
@@ -76,8 +88,14 @@ namespace App
 
                         if(nazwa == "GRATIN Z BATATÓW")
                         g = parametr;
+
+                        x = list_products[esc + 1];
+                        o = x;
+                        esc++;
                     }
                 }
+                if(x == "q")
+                    break;
             }
 
             if(parametr != 0)
