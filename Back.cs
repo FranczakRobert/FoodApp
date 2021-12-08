@@ -78,6 +78,7 @@ namespace App
                         g = parametr;
                     }
                 }
+            }
 
             if(parametr != 0)
             {
@@ -89,10 +90,10 @@ namespace App
                 System.Console.WriteLine($"Znaleziono {parametr} pasujące składniki na {lista.Count}\n \n \n \n");
                 else
                 System.Console.WriteLine($"Znaleziono {parametr} pasujących składników na {lista.Count}\n \n \n \n");
-                break;
+                
             }
             
-        }
+        
        
     }
     public void ShowFood()
