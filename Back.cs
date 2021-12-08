@@ -85,11 +85,11 @@ namespace App
                 wybor0++;
                 System.Console.WriteLine($"{wybor0}) Przepis na: {nazwa} ");
                 if(parametr == 1)
-                System.Console.WriteLine($"Znaleziono {parametr} pasujący składnik na {lista.Count}\n \n \n \n");
+                System.Console.WriteLine($"Znaleziono {parametr} pasujący składnik na {lista.Count} głównych składników\n \n \n \n");
                 else if(parametr > 1 && parametr < 5)
-                System.Console.WriteLine($"Znaleziono {parametr} pasujące składniki na {lista.Count}\n \n \n \n");
+                System.Console.WriteLine($"Znaleziono {parametr} pasujące składniki na {lista.Count} głównych składników\n \n \n \n");
                 else
-                System.Console.WriteLine($"Znaleziono {parametr} pasujących składników na {lista.Count}\n \n \n \n");
+                System.Console.WriteLine($"Znaleziono {parametr} pasujących składników na {lista.Count} głównych składników\n \n \n \n");
                 
             }
             
