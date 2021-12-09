@@ -16,6 +16,7 @@ namespace App
         WarzywneCurry warzywneCurry = new WarzywneCurry();
         SalatkaZAwokado salatkaZAwokado = new SalatkaZAwokado();
         GratinZBatatow gratinZBatatow = new GratinZBatatow();
+        KotletyZKalafiora kotletyZKalafiora = new KotletyZKalafiora();
 
         public void AddProducts(string ingridients)
         {
@@ -39,7 +40,7 @@ namespace App
             }
         }
 
-        int a =0,b =0,c =0,d =0,e =0,f=0,g=0;
+        int a =0,b =0,c =0,d =0,e =0,f=0,g=0, j = 0;
         int parametr = 0; 
         int wybor0 = 0;
         public void LookingForRecipies(string nazwa, int parametr, List<string> lista, List<string> pasujace)
@@ -70,9 +71,10 @@ namespace App
                             e = parametr;
                         if(nazwa == "SAŁATKA Z AWOKADO I PIECZONYCH BATATÓW")
                             f = parametr;
-
-                         if(nazwa == "GRATIN Z BATATÓW")
+                        if(nazwa == "GRATIN Z BATATÓW")
                             g = parametr;
+                        if(nazwa == "KOTLETY Z KALAFIORA I KASZY JAGLANEJ")
+                            j = parametr;
 
                         break;
                      }
@@ -105,6 +107,7 @@ namespace App
         this.LookingForRecipies("WARZYWNE CURRY Z DYNIĄ, KALAFIOREM I CIECIERZYCĄ", parametr , warzywneCurry.curry, warzywneCurry.pasujace_curry);
         this.LookingForRecipies("SAŁATKA Z AWOKADO I PIECZONYCH BATATÓW", parametr, salatkaZAwokado.avocado, salatkaZAwokado.pasujace_avocado);
         this.LookingForRecipies("GRATIN Z BATATÓW", parametr , gratinZBatatow.batat, gratinZBatatow.pasujace_batat);
+        this.LookingForRecipies("KOTLETY Z KALAFIORA I KASZY JAGLANEJ",parametr, kotletyZKalafiora.kalafior,kotletyZKalafiora.pasujace_kalafior);
     }
 
     int wybor = 0;
@@ -141,6 +144,7 @@ namespace App
                     this.CompareIngredients("WARZYWNE CURRY Z DYNIĄ, KALAFIOREM I CIECIERZYCĄ", e , warzywneCurry.pasujace_curry);
                     this.CompareIngredients("SAŁATKA Z AWOKADO I PIECZONYCH BATATÓW", f , salatkaZAwokado.pasujace_avocado);
                     this.CompareIngredients("GRATIN Z BATATÓW", g , gratinZBatatow.pasujace_batat);
+                    this.CompareIngredients("KOTLETY Z KALAFIORA I KASZY JAGLANEJ", j , kotletyZKalafiora.pasujace_kalafior);
                     break;
                 }
                 if(input == "nie")
@@ -240,11 +244,18 @@ namespace App
                         {
                             wybor++;
                         }
+                        if(j > 0 && input == wybor)
+                        {
+                            System.Console.WriteLine("\n");
+                            kotletyZKalafiora.ShowIngredients();
+                            kotletyZKalafiora.ShowRecipies();
+                            break;
+                        }
                         else
                         {
                             System.Console.WriteLine("Nie było takiej potrawy na liście!");
                         }
-                        System.Console.WriteLine("Wpisz ponownie pierwszy człon nazwy potrawy!");
+                        System.Console.WriteLine("Wybierz ponownie numer potrawy!");
                         odp = Console.ReadLine();
                 }
                 catch
