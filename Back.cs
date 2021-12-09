@@ -45,41 +45,41 @@ namespace App
         public void LookingForRecipies(string nazwa, int parametr, List<string> lista, List<string> pasujace)
         {
             
-           foreach(var item in list_products)
-            {
-                
-                for (int i = 0; i < lista.Count; i++)
-                {
-                    
-                    if(item == lista[i])
-                    {
-                        pasujace.Add(item);
-                        parametr++;
+           foreach (var item in list_products)
+           {
+                 for (int i = 0; i < lista.Count; i++)
+                 {
+                     if(item == "q")
+                     {
+                         break;
+                     }
+                     if(item == lista[i])
+                     {
+                         pasujace.Add(item);
+                         parametr++;
 
-                        if(nazwa == "KURCZAK Z RYZEM")
-                        a = parametr;
-
+                         if(nazwa == "KURCZAK Z RYZEM")
+                            a = parametr;
                         if(nazwa == "SPAGHETTI ALLA CARBONARA")
-                        b = parametr;
-
+                            b = parametr;
                         if(nazwa == "MAKARON Z KURKAMI I BOCZKIEM")
-                        c = parametr;
-
+                            c = parametr;
                         if( nazwa == "SPAGHETTI BOLOGNESE")
-                        d = parametr;
-
+                            d = parametr;
                         if(nazwa == "WARZYWNE CURRY Z DYNIĄ, KALAFIOREM I CIECIERZYCĄ")
-                        e = parametr;
-
+                            e = parametr;
                         if(nazwa == "SAŁATKA Z AWOKADO I PIECZONYCH BATATÓW")
-                        f = parametr;
+                            f = parametr;
 
-                        if(nazwa == "GRATIN Z BATATÓW")
-                        g = parametr;
-                    }
-                }
-            }
+                         if(nazwa == "GRATIN Z BATATÓW")
+                            g = parametr;
 
+                        break;
+                     }
+                 }
+                 if(item == "q")
+                     break;
+             }
             if(parametr != 0)
             {
                 wybor0++;
